@@ -44,5 +44,3 @@ A **Loja Fashion** é uma plataforma inovadora que combina moda e tecnologia par
 Este projeto faz parte de uma iniciativa acadêmica no curso de **Tecnologia em Análise e Desenvolvimento de Sistemas (Turma 50)** no **Campus Santo Amaro, São Paulo**.
 
 ---
-
-Isso está mais alinhado com a loja de roupas, mantendo as tecnologias e estrutura da original. Se precisar de ajustes, é só avisar!
