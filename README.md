@@ -1,8 +1,8 @@
 
-# Loja Fashion
+# Sabrina Closet
 
 **Nome da Empresa**  
-Loja Fashion
+Sabrina Closet
 
 **Ramo da Empresa**  
 Loja de roupas com soluções tecnológicas
@@ -34,4 +34,4 @@ A Loja Fashion oferecerá:
 
 ## Sobre o Projeto
 
-A **Loja Fashion** é uma plataforma inovadora que combina moda e tecnologia para proporcionar uma experiência de compra única e personalizada. Utilizando métodos modernos para otimizar operações internas e melhorar o atendimento ao cliente, a Loja Fashion visa transformar a maneira como os consumidores se conectam com o mundo da moda.
+A **Sabrina Closet** é uma plataforma inovadora que combina moda e tecnologia para proporcionar uma experiência de compra única e personalizada. Utilizando métodos modernos para otimizar operações internas e melhorar o atendimento ao cliente, a Loja Fashion visa transformar a maneira como os consumidores se conectam com o mundo da moda.
