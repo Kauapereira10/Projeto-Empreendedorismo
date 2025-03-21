@@ -1,85 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Roupas</title>
+    <title>Loja Online</title>
+    <link rel="shortcut icon" href="favicon/Iconoir-Team-Iconoir-Add-to-cart.512.icon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+
+    
 </head>
 <body>
-    <header>
-        <h1>Loja Fashion</h1>
-        <button id="themeToggle" onclick="toggleTheme()">🌙</button>
-    </header>
 
-    <!-- Filtros de produtos -->
-    <div class="filtros">
-        <button onclick="filterProducts('camisa')">Camisas</button>
-        <button onclick="filterProducts('calca')">Calças</button>
-        <button onclick="filterProducts('tenis')">Tênis</button>
+<header>
+    <h2>Bem-vindo à loja da menina la</h2>
+</header>
+
+<nav>
+    <a href="#home">Início</a>
+    <a href="#produtos">Produtos</a>
+    
+    <input type="text" placeholder="Pesquisar..." 
+       style="border: 2px solid #333; border-radius: 25px; padding: 5px 10px; width: 200px; outline: none;"/>
+
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section id="produtos" class="main-content">
+    <div class="product-card">
+        <img src="imagens/sapato01.jpeg" alt="Produto 1">
+        <h3>Produto 1</h3>
+        <p>Descrição breve do produto.</p>
+        <p class="price">R$ 99,99</p>
+        <button>Adicionar ao carrinho</button>
     </div>
-
-    <!-- Carrossel de produtos -->
-    <div class="carrossel">
-        <img src="imagens/produto01-1.jpg" alt="Produto 1">
-        <img src="imagens/produto01-2.jpg" alt="Produto 2">
-        <img src="imagens/produto01-3.jpg" alt="Produto 3">
+    <div class="product-card">
+        <img src="imagens/sapato02.jpeg" alt="Produto 2">
+        <h3>Produto 2</h3>
+        <p>Descrição breve do produto.</p>
+        <p class="price">R$ 149,99</p>
+        <button>Adicionar ao carrinho</button>
     </div>
-
-    <!-- Produtos -->
-    <section class="produtos">
-        <div class="produto camisa">
-            <img src="imagens/sapato01.jpeg" alt="Camisa Estilosa">
-            <h2>Camisa Estilosa</h2>
-            <p>Camisa de algodão confortável e moderna.</p>
-            <span>R$ 79,90</span>
-            <button onclick="adicionarAoCarrinho()">Comprar</button>
-            <button onclick="abrirModal()">Ver Detalhes</button>
-        </div>
-        
-        <div class="produto calca">
-            <img src="imagens/sapato02.jpeg" alt="Calça Jeans">
-            <h2>Calça Jeans</h2>
-            <p>Calça jeans slim fit para qualquer ocasião.</p>
-            <span>R$ 129,90</span>
-            <button onclick="adicionarAoCarrinho()">Comprar</button>
-            <button onclick="abrirModal()">Ver Detalhes</button>
-        </div>
-        
-        <div class="produto tenis">
-            <img src="images/tenis.jpg" alt="Tênis Casual">
-            <h2>Tênis Casual</h2>
-            <p>Tênis confortável e estiloso para o dia a dia.</p>
-            <span>R$ 199,90</span>
-            <button onclick="adicionarAoCarrinho()">Comprar</button>
-            <button onclick="abrirModal()">Ver Detalhes</button>
-        </div>
-    </section>
-
-    <!-- Modal de Produto -->
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="fecharModal()">&times;</span>
-            <h2>Produto Detalhado</h2>
-            <img src="imagens/detalhe_produto.jpg" alt="Detalhes do Produto">
-            <p>Descrição detalhada do produto.</p>
-        </div>
+    <div class="product-card">
+        <img src="imagens/shoppingtest01.webp" alt="Produto 3">
+        <h3>Produto 3</h3>
+        <p>Descrição breve do produto.</p>
+        <p class="price">R$ 199,99</p>
+        <button>Adicionar ao carrinho</button>
     </div>
+</section>
 
-    <!-- Carrinho -->
-    <div class="carrinho">
-        <button id="carrinhoButton">Carrinho (0)</button>
-    </div>
+<footer>
+    <p>&copy; 2025 Loja Online. Todos os direitos reservados.</p>
+</footer>
 
-    <footer>
-        <p>&copy; 2025 Loja Fashion. Todos os direitos reservados.</p>
-        <div class="redes-sociais">
-            <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="https://instagram.com" target="_blank">Instagram</a>
-            <a href="https://twitter.com" target="_blank">Twitter</a>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>

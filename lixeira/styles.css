@@ -1,0 +1,274 @@
+/* Definição de variáveis para facilitar customizações */
+:root {
+    --primary-color: #27ae60;
+    --primary-dark: #219150;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --card-bg: #fff;
+    --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 6px 18px rgba(0, 0, 0, 0.15);
+    --transition-fast: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+/* Estilos para o tema escuro */
+body.dark-theme {
+    background-color: #1a252f;
+    color: #ecf0f1;
+    transition: var(--transition-fast);
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+    background-color: #2c3e50;
+}
+
+body.dark-theme .produto {
+    background-color: #2c3e50;
+    border: 1px solid #2980b9;
+}
+
+body.dark-theme .produto h2,
+body.dark-theme .produto p,
+body.dark-theme .produto span {
+    color: #ecf0f1;
+}
+
+/* Botão de alternância de tema */
+button#themeToggle {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: var(--transition-fast);
+}
+
+button#themeToggle:hover {
+    color: var(--primary-color);
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    line-height: 1.6;
+    transition: var(--transition-fast);
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: var(--shadow-light);
+    transition: var(--transition-fast);
+}
+
+/* Filtros */
+.filtros button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    transition: var(--transition-fast);
+}
+
+.filtros button:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+}
+
+/* Carrossel */
+.carrossel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.carrossel img {
+    width: 100%;
+    max-width: 300px;
+    transition: transform var(--transition-slow);
+}
+
+.carrossel img:hover {
+    transform: scale(1.1);
+}
+
+/* Produtos */
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+/* Card de produto */
+.produto {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: var(--shadow-light);
+    width: calc(100% / 4 - 40px);
+    max-width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: var(--transition-fast);
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Imagem do produto */
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform var(--transition-fast);
+}
+
+.produto:hover img {
+    transform: scale(1.1);
+}
+
+/* Título */
+.produto h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+/* Descrição */
+.produto p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Preço */
+.produto span {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Botões */
+.produto button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: var(--transition-fast);
+}
+
+.produto button:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
+}
+
+/* Carrinho */
+#carrinhoButton {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+#carrinhoButton:hover {
+    background-color: var(--primary-dark);
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.redes-sociais a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+.redes-sociais a:hover {
+    color: var(--primary-color);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .produto { width: calc(100% / 3 - 40px); }
+}
+
+@media (max-width: 768px) {
+    .produto { width: calc(100% / 2 - 40px); }
+}
+
+@media (max-width: 480px) {
+    .produto { width: 100%; }
+    header { font-size: 20px; }
+}
