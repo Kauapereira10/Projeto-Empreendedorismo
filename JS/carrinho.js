@@ -19,7 +19,7 @@ addCartButtons.forEach(button => {
         const productCard = event.target.closest(".product-card"); // Encontra o card do produto clicado
         addToCart(productCard); // Chama a função para adicionar o produto ao carrinho
     });
-});
+}); 
 
 // Função para adicionar produto ao carrinho
 const addToCart = productBox => {
