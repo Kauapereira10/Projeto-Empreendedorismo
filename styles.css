@@ -58,7 +58,7 @@ nav {
     align-items: center;
     background-color: #444;
     padding: 10px 0;
-    gap: 10px;
+    gap: 50px;
 }
 
 /* Ajuste para o input de pesquisa */
@@ -83,7 +83,7 @@ nav a:hover {
 }
 
 .shop {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
@@ -97,7 +97,8 @@ nav a:hover {
 }
 
 .product-card {
-    width: calc(100% / 3 - 20px); /* Dividido em 3 colunas */
+    width: calc(100% / 3 - 20px);
+    /* Dividido em 3 colunas */
     background-color: #f0f0f0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -112,7 +113,7 @@ nav a:hover {
     transform: translateY(-10px);
 }
 
-section > .product-card img {
+section>.product-card img {
     width: 100%;
     height: auto;
     max-width: 250px;
@@ -132,6 +133,7 @@ section > .product-card img {
     color: #3c72b4;
     font-weight: bold;
     margin-top: 10px;
+
 }
 
 .product-price .product-button-add {
@@ -264,6 +266,63 @@ section > .product-card img {
     cursor: pointer;
 }
 
+#no_results {
+    display: none;
+    width: calc(100% / 3 - 20px);
+    /* Dividido em 3 colunas */
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.meuBotao {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    padding: 10px 15px;
+    background-color: #333;
+    outline: 3px #333 solid;
+    outline-offset: -3px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 10px auto ;
+}
+
+.meuBotao .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.meuBotao svg {
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3s;
+}
+
+.meuBotao:hover {
+    background-color: transparent;
+}
+
+.meuBotao:hover .text {
+    color: #181717;
+}
+
+.meuBotao:hover svg path {
+    fill: #333;
+}
+
 footer {
     background-color: #333333fe;
     color: white;
@@ -276,13 +335,15 @@ footer {
 /* Ajusta para telas menores */
 @media screen and (max-width: 768px) {
     .product-card {
-        width: calc(100% / 2 - 20px); /* 2 colunas */
+        width: calc(100% / 2 - 20px);
+        /* 2 colunas */
     }
 }
 
 @media screen and (max-width: 480px) {
     .product-card {
-        width: 100%; /* 1 coluna em telas pequenas */
+        width: 100%;
+        /* 1 coluna em telas pequenas */
     }
 }
 

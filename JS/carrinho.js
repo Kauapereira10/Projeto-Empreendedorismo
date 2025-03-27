@@ -19,7 +19,7 @@ addCartButtons.forEach(button => {
         const productCard = event.target.closest(".product-card"); // Encontra o card do produto clicado
         addToCart(productCard); // Chama a função para adicionar o produto ao carrinho
     });
-}); 
+});
 
 // Função para adicionar produto ao carrinho
 const addToCart = productBox => {
@@ -106,10 +106,10 @@ const updateCartCount = change => {
 
     // Mostra ou esconde o contador dependendo da quantidade de itens
     if (cartItemCount > 0) {
-        cartItemCountBadge.style.visibility = "visible";
+        cartItemCountBadge.style.visibility = "visible"; // Torna o contador visível
         cartItemCountBadge.textContent = cartItemCount;
     } else {
-        cartItemCountBadge.style.visibility = "hidden";
+        cartItemCountBadge.style.visibility = "hidden"; // Torna o contador invisível
         cartItemCountBadge.textContent = "";
     }
 };
